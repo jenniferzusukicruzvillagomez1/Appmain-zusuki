@@ -1,0 +1,22 @@
+ion-img{
+    width: 30vw;
+    background-size: cover;
+    padding: 0 20px;
+}
+ion-radio-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+@media screen and (max-width:720px){
+    ion-img{
+        width: 90vw;
+        padding: 0;
+        height: 40vh;
+    }
+    ion-radio-group{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

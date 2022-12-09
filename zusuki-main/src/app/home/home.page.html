@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Inicia Sesion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+      <ion-title>
+        Inicia Sesion
+      </ion-title>
+  </ion-header>
+  <ion-card>
+      <ion-img src="../../assets/images/cont_1_06.jpg"></ion-img>
+      <ion-card-content position="floating">
+        <ion-toolbar color="primary">
+          <ion-card-title>Inicia Sesión</ion-card-title>
+        </ion-toolbar>
+      <div>
+        <ion-item color="tertiary">
+          <ion-label slot="start"><ion-icon name="person-outline"></ion-icon></ion-label>
+          <ion-label position="floating">Nombre completo</ion-label>
+          <ion-input placeholder="Usuario@gmail.com" type="email"></ion-input>
+        </ion-item>
+        <ion-item color="tertiary">
+          <ion-label slot="start"><ion-icon name="lock-closed-outline"></ion-icon></ion-label>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input placeholder="Contraseña" type="password"></ion-input>
+        </ion-item>
+       <ion-item color="tertiary">
+        <input type="checkbox" id="Si"><label for="Si">Recordar</label>
+        <ion-label slot="end">
+          <ion-text><a href="" color="">¿Olvidaste tu contraseña?</a></ion-text>
+        </ion-label>
+       </ion-item>
+          <ion-button href="/tabs" color="tertiary">Ingresar</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

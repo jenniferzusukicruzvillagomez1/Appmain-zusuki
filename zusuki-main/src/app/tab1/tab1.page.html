@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      ¿Qúe tipo de mascota desea adoptar?
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">¿Qúe tipo de mascota desea adoptar?</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-radio-group value="strawberries">
+      <ion-item *ngFor="let animal of animales">
+        <ion-radio slot="end" value="{{animal.id}}"></ion-radio>
+        <ion-img [src]="animal.url"></ion-img>
+      </ion-item>
+    </ion-radio-group>
+    <ion-button>Aceptar</ion-button>
+  </ion-card>
+</ion-content>
